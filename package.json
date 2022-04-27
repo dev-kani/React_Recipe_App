@@ -2,6 +2,7 @@
   "name": "simple-movie-search-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Dev-Kani.github.io/React_Recipe_App",
   "dependencies": {
     "@splidejs/react-splide": "^0.6.20",
     "@testing-library/jest-dom": "^5.16.2",
@@ -17,6 +18,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
