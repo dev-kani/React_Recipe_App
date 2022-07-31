@@ -3,12 +3,13 @@ import { Link, useParams } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Searched = () => {
+  const theKey = '288ecc68631041c9a7bc1a09c023cfd9'
 
   const [searchedRecipes, setSearchedRecipes] = useState([])
   let params = useParams()
 
   const getSearched = async (name) => {
-    const data = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&query=${name}`)
+    const data = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${theKey}&query=${name}`)
     const recipes = await data.json()
     setSearchedRecipes(recipes.results)
   }

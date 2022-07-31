@@ -5,6 +5,9 @@ import '@splidejs/splide/dist/css/splide.min.css'
 import { Link } from "react-router-dom"
 
 const Veggie = () => {
+
+  const theKey = '288ecc68631041c9a7bc1a09c023cfd9'
+
   const [veggie, setVeggie] = useState([]);
 
   useEffect(() => {
@@ -17,7 +20,7 @@ const Veggie = () => {
     if (check) {
       setVeggie(JSON.parse(check))
     } else {
-      const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9&tags=vegetarian`)
+      const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${theKey}&number=9&tags=vegetarian`)
       const data = await api.json()
       localStorage.setItem('veggie', JSON.stringify(data.recipes))
       setVeggie(data.recipes)
