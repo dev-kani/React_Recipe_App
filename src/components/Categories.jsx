@@ -4,26 +4,26 @@ import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Categories = () => {
-    return (
-        <List>
-            <SLink to={'/cuisine/Italian'}>
-                <FaPizzaSlice />
-                <h4>Italian</h4>
-            </SLink>
-            <SLink to={'/cuisine/American'}>
-                <FaHamburger />
-                <h4>American</h4>
-            </SLink>
-            <SLink to={'/cuisine/Thai'}>
-                <GiNoodles />
-                <h4>Thai</h4>
-            </SLink>
-            <SLink to={'/cuisine/Japanese'}>
-                <GiChopsticks />
-                <h4>Japanese</h4>
-            </SLink>
-        </List>
-    )
+  return (
+    <List>
+      <SLink to={'/cuisine/Italian'}>
+        <FaPizzaSlice />
+        <h4>Italian</h4>
+      </SLink>
+      <SLink to={'/cuisine/American'}>
+        <FaHamburger />
+        <h4>American</h4>
+      </SLink>
+      <SLink to={'/cuisine/Thai'}>
+        <GiNoodles />
+        <h4>Thai</h4>
+      </SLink>
+      <SLink to={'/cuisine/Japanese'}>
+        <GiChopsticks />
+        <h4>Japanese</h4>
+      </SLink>
+    </List>
+  )
 }
 
 const List = styled.div`

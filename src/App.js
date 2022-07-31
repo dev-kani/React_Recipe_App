@@ -1,5 +1,4 @@
 import { Link, BrowserRouter } from 'react-router-dom'
-import './App.css'
 import Categories from './components/Categories'
 import Search from './components/Search';
 import Pages from './pages/Pages'
